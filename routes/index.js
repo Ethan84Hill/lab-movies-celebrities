@@ -7,7 +7,9 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
-
+router.get('/celebrities/new-celebrity.hbs', (req, res, next) => {
+  res.render('./celebrities.routes.js')
+})
 
 
 
