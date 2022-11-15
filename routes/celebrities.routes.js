@@ -17,7 +17,7 @@ router.post('/create', (req, res, next) => {
     })
         .then(createdCeleb => {
             console.log('i created a celebrity', createdCeleb);
-            res.send(createdCeleb);
+            // res.send(createdCeleb);
             res.redirect('/')
         })
         .catch(err => {
