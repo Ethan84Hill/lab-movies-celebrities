@@ -1,6 +1,5 @@
 // starter code in both routes/celebrities.routes.js and routes/movies.routes.js
 const router = require("express").Router();
-
 const Celeb = require('../models/Celebrity.model.js')
 
 // all your routes here
@@ -23,7 +22,7 @@ router.post('/create', (req, res, next) => {
         .catch(err => {
             res.redirect('/new-celebrity')
             res.send(err)
-        })
+    })
 })
 
  router.get('/celebrities', (req, res, next) => {

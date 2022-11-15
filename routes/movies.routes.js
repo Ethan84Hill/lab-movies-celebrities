@@ -81,7 +81,4 @@ router.post('/movies/:id/edit', (req, res, nex) => {
     .catch(err => console.log(err))
 })
 
-
-
-
 module.exports = router;
